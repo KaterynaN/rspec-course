@@ -17,7 +17,5 @@ RSpec.describe 'comparison matchers' do
         it {is_expected.to be < 500}
         it {is_expected.to be <= 100}
         it {is_expected.not_to be > 105}
-
-
     end
 end
