@@ -13,3 +13,13 @@ RSpec.describe Array do
         expect(sally).to eq(subject)
     end
 end
+
+RSpec.describe Array do
+    subject {[1, 2]}
+    
+    it 'is equal to original' do
+        expect(subject).to eq([1, 2])
+    end
+
+    it {is_expected.to eq([1, 2])}
+end
